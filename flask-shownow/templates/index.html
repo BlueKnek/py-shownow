@@ -5,8 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ShareNow!</title>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+
+  <!-- Custom -->
+  <link rel="stylesheet" href="static/style.css" />
 </head>
 <body>
-  <h1>Index page</h1>
+  <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-dark" uk-slideshow>
+    <ul class="uk-slideshow-items">
+      <li><img src="http://via.placeholder.com/800x600" alt=""></li>
+      <li><img src="http://via.placeholder.com/800x600" alt=""></li>
+      <li><img src="http://via.placeholder.com/800x600" alt=""></li>
+    </ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+  </div>
 </body>
 </html>
